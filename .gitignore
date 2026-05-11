@@ -1,1 +1,12 @@
-shell.nix
+.zig-cache
+zig-out
+zig-pkg
+
+.direnv
+*.nix
+flake.lock
+.envrc
+
+flame.svg
+perf.*
+
