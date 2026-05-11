@@ -18,6 +18,9 @@ pub fn main() !void {
 
         rlimgui.begin();
 
+        imgui.ImGui_SetNextWindowSize(.{ .x = 400, .y = 100 }, imgui.ImGuiCond_FirstUseEver);
+        imgui.ImGui_SetNextWindowPos(.{ .x = 50, .y = 50 }, imgui.ImGuiCond_FirstUseEver);
+
         _ = imgui.ImGui_Begin("Hello dearzig", null, 0);
         imgui.ImGui_Text("It works!");
         imgui.ImGui_End();
